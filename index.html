@@ -21,14 +21,58 @@
         <meta property="og:url" content="https://www.dimasconstrucoes.com.br/coberturas-dgarden/" /> -->
     </head>
     <body>
-      <section>
+      <section id="intro" class="container">
         <h1>Desenvolvedor Front-end em Florianópolis</h1>
         <p>Criação de estruturas semânticas (<strong>SEO</strong>) com <strong>HTML5</strong>, estilizadas com técnicas <strong>CSS3</strong>, focadas em performance e melhores resultados de conversão.</p>
+        <a href="#services">Serviços</a>
+      </section>
+      <section id="services" class="container">
+        <h2>Serviços Front-end</h2>
+        <ul>
+          <li>
+            <section>
+              <h3>
+                Criação de sites otimizados
+              </h3>
+              <p>
+                Sites personalizados com as melhores técnicas <strong>HTML5</strong>, <strong>CSS3</strong> e para <strong>SEO</strong>.
+              </p>
+            </section>
+          </li>
+          <li>
+            <section>
+              <h3>
+                Manutenção de sites
+              </h3>
+              <p>
+                Precisando alterar o conteúdo, imagens ou corrigir bugs no seu site? Entre em contato.
+              </p>
+            </section>
+          </li>
+          <li>
+            <section>
+              <h3>
+                Otimização para Google
+              </h3>
+              <p>
+                Análise de projetos, soluções criativas e implementação de otimizações de código e conteúdo para seu site.
+              </p>
+            </section>
+          </li>
+        </ul>
+        <a href="#intro">Introdução</a>
       </section>
     </body>
     <style>
-      body{width:100%;height:100vh;box-sizing:border-box;padding:0 1.6vw;margin:0;overflow:hidden;background-image:linear-gradient(to bottom, #395087, #041c65);text-align:center;display:flex;align-items:center;justify-content: center;}
-      section{width:100%;display:flex;flex-direction:column;}
-      h1,p{color:#adb1b6;font-family:'Helvetica';}
+      body{width:100%;box-sizing:border-box;padding:0 20px;margin:0;overflow:hidden;text-align:center;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;}
+      .container{width:100%;height:100vh;display:flex;flex-direction:column;justify-content:center;background-image:linear-gradient(to bottom, #395087, #041c65);padding:0 20px;}
+      h1,h2,h3,p,a,li{color:#adb1b6;font-family:'Helvetica';font-size:1em;}
+      h1,h2{font-size:2em;}
+      h3{font-size:1.5em;}
+      a{width:120px;display:block;margin:0 auto;padding:15px 10px;background-color:#adb1b6;border-radius:10px;text-decoration:none;color:#395087;margin-top:20px;}
+      p,li{margin-top:20px;margin-bottom:20px;}
+      ul{padding:0;margin-left:1.6%;margin-right:1.6%;}
+      li{list-style:none;display:inline-block;vertical-align:top;margin:0 1.6%;}
+      li p{max-width:290px;margin:0 auto;}
     </style>
 </html>
