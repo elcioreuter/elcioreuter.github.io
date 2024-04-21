@@ -30,6 +30,7 @@ h1,h2,h3,p,a,li{
     color:#000;
     font-size:1em;
     margin-bottom:20px;
+    display: block;
 }
 h1, h2, h3{
     font-family: "robotobold", sans-serif;
