@@ -173,5 +173,12 @@
         </ul>
         <a class="button" href="#intro">Introdução</a>
       </section>
+      <script async defer>
+        if (window.location.hostname === 'www.elcioreuter.com.br') {
+          if (window.location.protocol !== 'https:') {
+              window.location.href = 'https://www.elcioreuter.com.br' + window.location.pathname;
+          }
+        }
+      </script>
     </body>
 </html>
