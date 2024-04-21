@@ -11,8 +11,6 @@ body{
     justify-content:center;
     flex-direction:column;
     text-align:center;
-    background-color:#E1E1E1;
-    font-family: "robotoregular", sans-serif;
 }
 .container{
     width:100%;
