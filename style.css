@@ -30,6 +30,7 @@ body{
     justify-content:center;
     flex-direction:column;
     text-align:center;
+    font-family: "robotoregular", sans-serif;
 }
 .container{
     width:100%;
@@ -54,6 +55,30 @@ h1,h2{
 }
 h3{
     font-size:1.5em;
+}
+.tags{
+    max-width:100%;
+    margin:20px auto;
+    display:flex;
+    flex-wrap:wrap;
+    gap:5px;
+    justify-content:center;
+}
+.tags li{
+    margin:0;
+}
+.tags a{
+    width:auto;
+    display:block;
+    margin:0 auto;
+    padding:5px 8px;
+    font-weight:700;
+    text-decoration:none;
+    color:#000;
+    border:3px solid #fccb02;
+    border-radius:5px;
+    font-size:.9em;
+    font-family: "robotoregular", sans-serif;
 }
 .button{
     width:120px;
@@ -82,30 +107,6 @@ li{
 li p{
     max-width:290px;
     margin:0 auto;}
-.tags{
-    max-width:100%;
-    margin:20px auto;
-    display:flex;
-    flex-wrap:wrap;
-    gap:5px;
-    justify-content:center;
-}
-.tags li{
-    margin:0;
-}
-.tags a{
-    width:auto;
-    display:block;
-    margin:0 auto;
-    padding:5px 8px;
-    font-weight:700;
-    text-decoration:none;
-    color:#000;
-    border:3px solid #fccb02;
-    border-radius:5px;
-    font-size:.9em;
-    font-family: "robotoregular", sans-serif;
-}
 .brand{
     width: 70px;
     height: 60px;
