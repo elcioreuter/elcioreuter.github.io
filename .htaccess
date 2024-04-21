@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Redirecionamento para www
+    RewriteCond %{HTTP_HOST} !^www\. [NC]
+    RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    
+    # Redirecionamento para HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Cache de imagens por 1 semana (604800 segundos)
+    <FilesMatch "\.(jpg|jpeg|png|gif|svg)$">
+        Header set Cache-Control "max-age=604800, public"
+    </FilesMatch>
+
+    # Cache de fontes por 1 mês (2592000 segundos)
+    <FilesMatch "\.(woff|woff2|ttf|otf)$">
+        Header set Cache-Control "max-age=2592000, public"
+    </FilesMatch>
+</IfModule>
